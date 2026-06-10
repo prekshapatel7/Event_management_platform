@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Event</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<h2>Create Event</h2>
+
+<div id="successContainer" class="success-container hidden">
+    <div class="checkmark">✓</div>
+    <h3>Event Created</h3>
+    <p>Your event is now live in Upcoming Events.</p>
+    <div class="success-actions">
+        <button type="button" id="newEventBtn">Create Another Event</button>
+        <button type="button" id="viewEventsBtn">View Upcoming Events</button>
+    </div>
+</div>
+
+<form id="eventForm">
+
+<input
+type="text"
+id="title"
+placeholder="Event Title"
+required
+>
+
+<textarea
+id="description"
+placeholder="Description"
+required
+></textarea>
+
+<input
+type="date"
+id="date"
+required
+>
+
+<input
+type="text"
+id="venue"
+placeholder="Venue"
+required
+>
+
+<button type="submit" id="submitBtn">
+Create Event
+</button>
+
+</form>
+
+</div>
+
+<script src="./js/create-event.js"></script>
+
+</body>
+</html>
